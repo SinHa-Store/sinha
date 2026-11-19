@@ -61,7 +61,7 @@ label{display:block;font-size:12px;color:#c9c5bb;font-weight:700;margin:16px 0 7
 const WA_ADMIN="6285774429773",ADMIN_PIN="123456";
 const prices={50:8000,100:16000,200:32000,300:48000,500:80000,1000:160000};
 let selected=50;
-let data=JSON.parse(localStorage.getItem("sinHaData"))||{stock:10000,orders:[]};
+let data=JSON.parse(localStorage.getItem("sinHaData"))||{stock:19508,orders:[]};
 function save(){localStorage.setItem("sinHaData",JSON.stringify(data))}
 function rupiah(n){return "Rp"+Number(n).toLocaleString("id-ID")}
 function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
